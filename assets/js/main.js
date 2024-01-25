@@ -34,6 +34,37 @@ const shadowHeader = () =>{
 window.addEventListener('scroll', shadowHeader)
 
 /*=============== EMAIL JS ===============*/
+/*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form');
+
+// Check if contactMessage exists before trying to access its properties
+const contactMessage = document.getElementById('contact-message') || { textContent: null };
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_oqat26k', 'template_p7720lj', '#contact-form', '2N0Tx6i8oaZNUk7A0')
+    .then(() => {
+        if (contactMessage.textContent !== null) {
+            contactMessage.textContent = 'Message sent successfully';
+
+            setTimeout(() => {
+                contactMessage.textContent = '';
+            }, 5000);
+        }
+
+        contactForm.reset();
+    })
+    .catch(() => {
+        if (contactMessage.textContent !== null) {
+            contactMessage.textContent = 'Message not sent (service error)';
+        }
+    });
+}
+
+if (contactForm) {
+    contactForm.addEventListener('submit', sendEmail);
+}
 
 
 /*=============== SHOW SCROLL UP ===============*/ 
