@@ -883,7 +883,8 @@ body.dark-theme{
 .contact__mail{
   position: relative;
   /* background-color: var(--black-color); */
-  background-image: url('assets/img/bg.jpg');
+  /* background-image: url('/assets/img/bg.jpg'); */
+  background-image: url(/assets/img/bg.jpg);
   padding: 5rem 1.5rem 2.5rem;
   margin-top: -2.5rem;
   transition: background-color .4s;
