@@ -140,3 +140,34 @@ const sr = ScrollReveal({
 sr.reveal('.home__perfil, .about__image, .contact__mail', {origin: 'right'})
 sr.reveal('.home__name, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data', {origin: 'left'})
 sr.reveal('.services__card, .projects__card', {interval: 100})
+
+// FOR FULL SCREEN OF IMAGE
+function showFullscreen(src) {
+    var fullscreenImg = document.getElementById('fullscreen-img');
+    fullscreenImg.src = src;
+    document.getElementById('fullscreen').style.display = 'block';
+  }
+
+function hideFullscreen() {
+    document.getElementById('fullscreen').style.display = 'none';
+  }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const showMoreButton = document.querySelector('.show-more');
+    const hiddenCards = document.querySelectorAll('.projects__card.hidden');
+
+    let cardsToShow = 10; // Number of cards to show initially
+    let index = 0;
+
+    showMoreButton.addEventListener('click', function() {
+        for (let i = index; i < index + cardsToShow && i < hiddenCards.length; i++) {
+            hiddenCards[i].classList.remove('hidden');
+        }
+        index += cardsToShow;
+
+        // Hide the "Show More" button if all cards are displayed
+        if (index >= hiddenCards.length) {
+            showMoreButton.style.display = 'none';
+        }
+    });
+});

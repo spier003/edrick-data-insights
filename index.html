@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+      <link rel="shortcut icon" href="assets/img/favicon2.png" type="image/x-icon">
 
       <!--=============== REMIXICONS ===============-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
@@ -13,15 +13,16 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive portfolio website Rian - Bedimcode</title>
+      <title>Edrick Lloyd Defeo's Portfolio</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
             <a href="#" class="nav__logo">
-               <span class="nav__logo-circle">R</span>
-               <span class="nav__logo-name">Edrick</span>
+               <span class="nav__logo-name">SELECT</span>
+               <span class="nav__logo-circle">EDRICK</span>
+               
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -35,6 +36,12 @@
                   </li>
                   <li class="nav__item">
                      <a href="#about" class="nav__link">About Me</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#certificates" class="nav__link">Certificates</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#skills" class="nav__link">Skills</a>
                   </li>
                   <li class="nav__item">
                      <a href="#projects" class="nav__link">Projects</a>
@@ -86,7 +93,7 @@
                      <a href="https://www.linkedin.com/in/defeoedrick/" target="_blank" class="home__social-link">
                         <i class="ri-linkedin-box-line"></i>
                      </a>
-                     <a href="#" target="_blank" class="home__social-link">
+                     <a href="https://github.com/spier003" target="_blank" class="home__social-link">
                         <i class="ri-github-line"></i>
                      </a>
                   </div>
@@ -94,7 +101,7 @@
 
                <div class="home__info">
                   <p class="home__description">
-                     My name is <b>Edrick Lloyd Defeo</b>, an aspiring data analyst deeply passionate about data analytics. I am driven by continuous development, committed to personal and professional growth, and poised to leverage my versatile skills to excel in the field.
+                     My name is <b>Edrick Lloyd Defeo</b>, an aspiring data analyst deeply passionate about data analytics.
                   </p>
 
                   <a href="#about" class="home__scroll">
@@ -132,20 +139,20 @@
                <div class="about__info">
                   <p class="about__description">
                      I recently graduated with a degree in  <b>Information Technology </b> with
-                     <b>accumulative GPA of (1.20). </b>My interest in data analytics emerged because of its fundamental capacity to provide meaningful insights and drive informed decision-making across multiple domains.
+                     <b>accumulative GPA of (1.20). </b> <br> My interest in data analytics emerged because of its fundamental capacity to provide meaningful insights and drive informed decision-making across multiple domains.
                   </p>
 
-                  <ul class="about__list">
+                  <!-- <ul class="about__list">
                      <li class="about__item">
                         <b>My Skills are:</b> HTML, CSS, JavaScript,
                         React, Git & GitHub, Bootstrap, Flutter & Figma.
                      </li>
-                  </ul>
+                  </ul> -->
 
                   <div class="about__buttons">
-                     <a href="#contact" class="button">
-                        <i class="ri-send-plane-line"></i> Contact Me
-                     </a>
+                     <a href="assets/file/EDRICK-LLOYD-DEFEO-RESUME.pdf" class="button" download>
+                        <i class="ri-file-download-line"></i> Download my Resume
+                    </a>
 
                      <a href="https://www.linkedin.com/in/defeoedrick/" target="_blank" class="button__ghost">
                         <i class="ri-linkedin-box-line"></i>
@@ -156,9 +163,9 @@
          </section>
 
          <!--==================== SERVICES ====================-->
-         <section class="services section">
+         <section class="services section" id="certificates">
             <h2 class="section__title-2">
-               <span>Services.</span>
+               <span>Certificates.</span>
             </h2>
 
             <div class="services__container container grid">
@@ -166,157 +173,564 @@
                   <div class="services__border"></div>
 
                   <div class="services__content">
-                     <div class="services__icon">
-                        <div class="services__box"></div>
-                        <i class="ri-layout-4-line"></i>
+                     <div class="projects__image">
+                        <img src="assets/img/Associate Data Analyst.jpg" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+   
+                        <a href="https://www.datacamp.com/certificate/DAA0013009336490" class="projects__button button">
+                           <i class="ri-arrow-right-up-line"></i>
+                        </a>
                      </div>
-
-                     <h2 class="services__title">Web Design</h2>
-
-                     <p class="services__decscription">
-                        Beautiful and elegant designs with interfaces that are intuitive,
-                        efficient and pleasant to use for the user.
-                     </p>
+                     <br>
+                     <h2 class="services__title">Associate Data Analyst</h2>
+                     <h2 class="services__subtitle">Datacamp</h2>
+                     <h2 class="services__date">April 10, 2024</h2>
+                     <div class="services_menu">
+                        <ul id="services_menu">
+                          <li>Data Management</li>
+                           <li>Exploratory Analysis</li>
+                           <li>Statistical Experimentation</li>
+                           <li>Communication and Visualization</li>
+                         </ul> 
+                      </div>
                   </div>
                </article>
-
                <article class="services__card">
                   <div class="services__border"></div>
 
                   <div class="services__content">
-                     <div class="services__icon">
-                        <div class="services__box"></div>
-                        <i class="ri-code-box-line"></i>
+                     <div class="projects__image">
+                        <img src="assets/img/Business Intelligence with Power BI Desktop End-to-End Solutions.jpg" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+   
+                        <a href="https://drive.google.com/file/d/1f6V3q_5GPH84Vd0bKB8J8uEL1DUQH7Yc/view" class="projects__button button">
+                           <i class="ri-arrow-right-up-line"></i>
+                        </a>
                      </div>
-                     <h2 class="services__title">Development</h2>
-
-                     <p class="services__decscription">
-                        Custom web development tailored to your specifications,
-                        designed to provide a flawless user experience.
-                     </p>
+                     <br>
+                     <h2 class="services__title bi">Business Intelligence with POWER BI End-to-End Solutions with capstone project </h2>
+                     <h2 class="services__subtitle">DataSense Analytics</h2>
+                     <h2 class="services__date">April 10, 2024</h2>
+                     <div class="services_menu">
+                        <ul id="services_menu">
+                          <li>Data Prep with Power Query</li>
+                           <li>Data Modelling</li>
+                           <li>Data Analysis Expression</li>
+                           <li>Dashboard Design</li>
+                         </ul> 
+                      </div>
                   </div>
                </article>
-
                <article class="services__card">
                   <div class="services__border"></div>
 
                   <div class="services__content">
-                     <div class="services__icon">
-                        <div class="services__box"></div>
-                        <i class="ri-smartphone-line"></i>
+                     <div class="projects__image">
+                        <img src="assets/img/Data Analytics Essentials.jpg" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+   
+                        <a href="https://drive.google.com/file/d/1X8fDTxt3R-TuSTDaj7TuguQqtimD322I/view" class="projects__button button">
+                           <i class="ri-arrow-right-up-line"></i>
+                        </a>
                      </div>
-                     <h2 class="services__title">Mobile App</h2>
-
-                     <p class="services__decscription">
-                        Design and transform website projects
-                        into mobile apps to provide a seamless
-                        user experience.
-                     </p>
+                     <br>
+                     <h2 class="services__title">Data Analytics Essentials </h2>
+                     <h2 class="services__subtitle">Cisco</h2>
+                     <h2 class="services__date">December , 2023</h2>
+                     <div class="services_menu">
+                        <ul id="services_menu">
+                           <li>MySQL</li>
+                         </ul> 
+                      </div>
                   </div>
                </article>
+               <article class="services__card">
+                  <div class="services__border"></div>
+
+                  <div class="services__content">
+                     <div class="projects__image">
+                        <img src="assets/img/Data Science in Real Life.jpg" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+   
+                        <a href="https://www.coursera.org/account/accomplishments/verify/ECLU9DTM944K" class="projects__button button">
+                           <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                     </div>
+                     <br>
+                     <h2 class="services__title">Data Science in Real Life</h2>
+                     <h2 class="services__subtitle">Coursera</h2>
+                     <h2 class="services__date">March 5, 2024</h2>
+                     <div class="services_menu">
+                        <ul id="services_menu">
+                          <li>Data Science</li>
+                          <li>Data Analysis</li>
+                          <li>Statistics</li>
+                          <li>Data Management</li>
+                         </ul> 
+                      </div>
+                  </div>
+               </article>
+               <article class="services__card">
+                  <div class="services__border"></div>
+
+                  <div class="services__content">
+                     <div class="projects__image">
+                        <img src="assets/img/DICT.jpg" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+   
+                        <a href="https://drive.google.com/file/d/1hYpx3tZx25ycaFrDldw_Ne9UJJd37SnF/view" class="projects__button button">
+                           <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                     </div>
+                     <br>
+                     <h2 class="services__title bi">Excelerate Your Career: Mastering Microsoft Excel with the MO 200 Certification Training </h2>
+                     <h2 class="services__subtitle">Department of Information and Communications Technology</h2>
+                     <h2 class="services__date">February 1, 2024</h2>
+                     <div class="services_menu">
+                        <ul id="services_menu">
+                          <li>Microsoft Excel</li>
+                           <li>Formulas and Functions</li>
+                           <li>Data Analysis</li>
+                           <li>Data Management</li>
+                         </ul> 
+                      </div>
+                  </div>
+               </article>
+               <article class="services__card">
+                  <div class="services__border"></div>
+
+                  <div class="services__content">
+                     <div class="projects__image">
+                        <img src="assets/img/mySQL Essentials for Data Analyst.jpg" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+   
+                        <a href="https://drive.google.com/file/d/17CvlX5LiDyR1bl2S4GZ_1-wxLQ0A9sUs/view" class="projects__button button">
+                           <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                     </div>
+                     <br>
+                     <h2 class="services__title">mySQL Essentials for Data Analyst </h2>
+                     <h2 class="services__subtitle">DataSense Analytics</h2>
+                     <h2 class="services__date">December 23, 2023</h2>
+                     <div class="services_menu">
+                        <ul id="services_menu">
+                           <li>MySQL</li>
+                         </ul> 
+                      </div>
+                  </div>
+               </article>
+
+
             </div>
+
+            <h2 class="section__title-2" id="skills">
+               <span>Skills.</span>
+            </h2>
+
+            <div class="skills__grid">
+               <h2 class="skills__category">Data Science and Analytics</h2>
+               <div class="skills__items-row">
+                 <div class="skills__item">
+                   <img src="assets/img/postgre.png" alt="PostgreSQL">
+                   <p>PostgreSQL</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/mysql.png" alt="MySQL">
+                   <p>MySQL</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/python.png" alt="Python">
+                   <p>Python</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/excel.png" alt="Microsoft Excel">
+                   <p>Microsoft Excel</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/powerbi.png" alt="Microsoft Power BI">
+                   <p>Microsoft Power BI <br> (Power Query, DAX)</p>
+                 </div>
+               </div>
+
+               <h2 class="skills__category">Web Development</h2>
+               <div class="skills__items-row">
+                 <div class="skills__item">
+                   <img src="assets/img/html.png" alt="HTML">
+                   <p>HTML</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/css.png" alt="CSS">
+                   <p>CSS</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/bootstrap.png" alt="Bootstrap">
+                   <p>Bootstrap</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/git.png" alt="Git">
+                   <p>Git</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/github.png" alt="Github">
+                   <p>Github</p>
+                 </div>
+               </div>
+                 
+               <h2 class="skills__category">Design Tools</h2>
+               <div class="skills__items-row">
+                 <div class="skills__item">
+                   <img src="assets/img/photoshop.png" alt="Adobe Photoshop">
+                   <p>Adobe Photoshop</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/illustrator.png" alt="Adobe Illustrator">
+                   <p>Adobe Illustrator</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/canva.png" alt="Canva Program">
+                   <p>Canva Program</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/capcut.png" alt="Capcut">
+                   <p>Capcut</p>
+                 </div>
+               </div>
+            </div>
+               <h2 class="skills__category">Agile Methodologies</h2>
+               <div class="skills__items-row">
+                 <div class="skills__item">
+                   <img src="assets/img/scrum.png" alt="Scrum">
+                   <p>Scrum</p>
+                 </div>
+                 <div class="skills__item">
+                   <img src="assets/img/kanban.png" alt="Kanban">
+                   <p>Kanban</p>
+                 </div>
+               </div>
+
+
+            </div>
+
          </section>
 
          <!--==================== PROJECTS ====================-->
          <section class="projects section" id="projects">
             <h2 class="section__title-1">
                <span>Projects.</span>
+               <h4 class="project_desc">Some of the projects I build using data visualization platforms.</h4>
             </h2>
 
             <div class="projects__container container grid">
                <articles class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/sales-cover.jpg" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
 
-                     <a href="#" class="projects__button button">
+                     <a href="https://github.com/spier003/Sales-Dashboard" class="projects__button button">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
 
                   <div class="projects__content">
-                     <h3 class="projects__subtitle">Website</h3>
-                     <h2 class="projects__title">Restaurant Website</h2>
+                     <h3 class="projects__subtitle">Power BI</h3>
+                     <h2 class="projects__title">Adventure Works Sale Dashboard</h2>
 
                      <p class="projects__description">
-                        Project that you carry out in the design and structure of the layout, showing the design at the client's request.
+                        This Power BI dashboard aims to provide detailed insights into sales performance, revenue generation, cost analysis, and profitability metrics.
                      </p>
                   </div>
 
                   <div class="projects_buttons">
-                     <a href="#" target="_blank" class="projects__link">
+                     <div class="projects_menu">
+                        <ul id="menu">
+                          | <li>Microsoft Power BI</li> |
+                           <li>Data Visualization</li> |
+                           <li>Dashboard Design</li> |
+                           <li>Data Modelling</li> |
+                           <li>Data Analysis Expression</li> |
+                           <li>Power Query</li> |
+                         </ul> 
+                      </div>
+                     <br>
+                     <div class="center-button">
+                     <a href="https://github.com/spier003/Sales-Dashboard" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+                  </div>
+               </articles>
+               <articles class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/sales-cover.jpg" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+
+                     <a href="https://github.com/spier003/Human-Resource-Analytics-Dashboard" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Excel</h3>
+                     <h2 class="projects__title">Human Resource Analytics Dashboard</h2>
+
+                     <p class="projects__description">
+                        The Human Resource Analytics Dashboard offers a comprehensive overview of various key performance indicators (KPIs) for workforce management and employee data within an organization. 
+                     </p>
+                  </div>
+
+                  <div class="projects_buttons">
+                     <div class="projects_menu">
+                        <ul id="menu">
+                           | <li>Excel</li> |
+                           <li>Data Analysis</li> |
+                           <li>Data Visualization</li> |
+                           <li>Dashboard Design</li> |
+                           <li>Data Collection</li> |
+                           <li>Data Cleaning</li> |
+                           <li>Pivot Table</li> |
+                         </ul> 
+                      </div>
+                     <br>
+                     <div class="center-button">
+                     <a href="https://github.com/spier003/Human-Resource-Analytics-Dashboard" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+                  </div>
+               </articles>
+               <articles class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/covid-19-cover.JPG" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+
+                     <a href="https://github.com/spier003/COVID-19-Vaccine-Tracker-Dashboard" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Power BI</h3>
+                     <h2 class="projects__title">COVID-19 Vaccine Tracker Dashboard</h2>
+
+                     <p class="projects__description">
+                        COVID-19 Global Vaccine Tracker dashboard is to provide real-time insights into the progress of COVID-19 vaccination efforts worldwide. It aims to track key vaccination metrics and analyze their impact on different regions and countries. 
+                     </p>
+                  </div>
+
+                  <div class="projects_buttons">
+                     <div class="projects_menu">
+                        <ul id="menu">
+                           | <li>Microsoft Power BI</li> |
+                           <li>Data Cleaning</li> |
+                           <li>Data Transformation</li> |
+                           <li>Data Analysis</li> |
+                         </ul> 
+                      </div>
+                     <br>
+                     <div class="center-button">
+                     <a href="https://github.com/spier003/COVID-19-Vaccine-Tracker-Dashboard" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+                  </div>
+               </articles>
+               
+               <articles class="projects__card hidden">
+                  <div class="projects__image">
+                     <img src="assets/img/ph-population-cover.JPG" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+
+                     <a href="https://github.com/spier003/PH-Population-Dashboard" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Excel</h3>
+                     <h2 class="projects__title">Philippines Population Dashboard</h2>
+
+                     <p class="projects__description">
+                        The Philippines Population Dashboard provides a comprehensive overview of key population metrics and trends, enabling stakeholders to gain insights into the demographic landscape of the Philippines over time.
+                     </p>
+                  </div>
+
+                  <div class="projects_buttons">
+                     <div class="projects_menu">
+                        <ul id="menu">
+                           | <li>Excel</li> |
+                           <li>Dashboard Design</li> |
+                           <li>Data Cleaning</li> |
+                           <li>Web Scraping</li> |
+                         </ul> 
+                      </div>
+                     <br>
+                     <a href="https://github.com/spier003/PH-Population-Dashboard" target="_blank" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
                   </div>
                </articles>
 
-
-               <articles class="projects__card">
+               <articles class="projects__card hidden">
                   <div class="projects__image">
-                     <img src="assets/img/project-2.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/financial-cover.JPG" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
 
-                     <a href="#" class="projects__button button">
+                     <a href="https://github.com/spier003/Financial-Dashboard" class="projects__button button">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
 
                   <div class="projects__content">
-                     <h3 class="projects__subtitle">App</h3>
-                     <h2 class="projects__title">Yoga App</h2>
+                     <h3 class="projects__subtitle">Power BI</h3>
+                     <h2 class="projects__title">Financial Dashboard</h2>
 
                      <p class="projects__description">
-                        Project that you carry out in the design and structure of the layout, showing the design at the client's request.
+                        This dashboard aims to provide insights into the business's financial performance from 2013 to 2014, filtered by year, month, country, product, and segment.
                      </p>
                   </div>
 
                   <div class="projects_buttons">
-                     <a href="#" target="_blank" class="projects__link">
+                     <div class="projects_menu">
+                        <ul id="menu">
+                           | <li>Microsoft Power BI</li> |
+                           <li>Data Cleaning</li> |
+                           <li>Data Analysis</li> |
+                           <li>Data Analysis Expression</li> |
+                           <li>Data Modelling</li> |
+                         </ul> 
+                      </div>
+                     <br>
+                     <a href="https://github.com/spier003/Financial-Dashboard" target="_blank" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
                   </div>
                </articles>
 
-
-               <articles class="projects__card">
+               <articles class="projects__card hidden">
                   <div class="projects__image">
-                     <img src="assets/img/project-3.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/mcdo-sales-dashboard.JPG" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
 
-                     <a href="#" class="projects__button button">
+                     <a href="https://github.com/spier003/Mcdo-Sales-Dashboard" class="projects__button button">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
 
                   <div class="projects__content">
-                     <h3 class="projects__subtitle">App</h3>
-                     <h2 class="projects__title">Fast Food App</h2>
+                     <h3 class="projects__subtitle">Excel</h3>
+                     <h2 class="projects__title">Mcdo Sales Dashboard</h2>
 
                      <p class="projects__description">
-                        Project that you carry out in the design and structure of the layout, showing the design at the client's request.
+                        This dashboard creates a comprehensive sales dashboard for McDonald's North America in 2022, providing data on sales performance, profitability, customer trends, and satisfaction levels.
                      </p>
                   </div>
 
                   <div class="projects_buttons">
-                     <a href="#" target="_blank" class="projects__link">
+                     <div class="projects_menu">
+                        <ul id="menu">
+                           | <li>Excel</li> |
+                           <li>Data Analysis</li> |
+                           <li>Data Visualization</li> |
+                           <li>Dashboard Design</li> |
+                           <li>Data Collection</li> |
+                         </ul> 
+                      </div>
+                     <br>
+                     <div class="center-button">
+                     <a href="https://github.com/spier003/Mcdo-Sales-Dashboard" target="_blank" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
+                     </div>
+                  </div>
+               </articles>
+
+                <articles class="projects__card hidden">
+                  <div class="projects__image">
+                     <img src="assets/img/data-professional-cover.JPG" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+
+                     <a href="https://github.com/spier003/Data-Professional-Survey-Breakdown-Dashboard" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Power BI</h3>
+                     <h2 class="projects__title">Data Professional Survey Dashboard</h2>
+
+                     <p class="projects__description">
+                        The "Data Professional Survey Breakdown" dashboard aims to provide comprehensive insights into the demographics, job satisfaction, preferences, and salary trends of data professionals. 
+                     </p>
+                  </div>
+
+                  <div class="projects_buttons">
+                     <div class="projects_menu">
+                        <ul id="menu">
+                           | <li>Microsoft Power BI</li> |
+                           <li>Data Cleaning</li> |
+                           <li>Data Transformation</li> |
+                           <li>Data Modelling</li> |
+                         </ul> 
+                      </div>
+                     <br>
+                     <div class="center-button">
+                     <a href="https://github.com/spier003/Data-Professional-Survey-Breakdown-Dashboard" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                     </div>
+                  </div>
+               </articles>
+
+               <articles class="projects__card hidden">
+                  <div class="projects__image">
+                     <img src="assets/img/performance-cover.JPG" alt="image" class="projects__img" onclick="showFullscreen(this.src)">
+
+                     <a href="https://github.com/spier003/Performance-Dashboard" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Excel</h3>
+                     <h2 class="projects__title">Performance Dashboard</h2>
+
+                     <p class="projects__description">
+                        This dashboard aims to create a dynamic sales dashboard that provides insights into sales trends, regional performance, employee contributions, and customer revenue.
+                     </p>
+                  </div>
+
+                  <div class="projects_buttons">
+                     <div class="projects_menu">
+                        <ul id="menu">
+                           | <li>Excel</li> |
+                           <li>Data Analysis</li> |
+                           <li>Data Visualization</li> |
+                           <li>Dashboard Design</li> |
+                           <li>Data Collection</li> |
+                           <li>Pivot Table</li> |
+                         </ul> 
+                      </div>
+                     <br>
+                     <div class="center-button">
+                     <a href="https://github.com/spier003/Performance-Dashboard" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                     </div>
                   </div>
                </articles>
             </div>
+            <div class="center-button-show-more"> <!-- New div for centering -->
+               <button class="show-more button" onclick="showMore()">Show More</button>
+             </div>
+            
          </section>
+
+         <div id="fullscreen" class="fullscreen" onclick="hideFullscreen()">
+            <span class="close-btn" onclick="hideFullscreen()">X</span>
+            <img id="fullscreen-img">
+          </div>
 
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
             <div class="contact__container grid">
                <div class="contact__data">
                   <h2 class="section__title-2">
-                     <span>Contact Me.</span>
+                     <span>Get in touch.</span>
                   </h2>
 
                   <p class="contact__description-1">
-                     I will read all emails. Send my any message you want and I'll get back to you.
+                     Whether you have a question or just want to connect, feel free to reach out. 
                   </p>
 
                   <p class="contact__description-2">
-                     I need your <b>Name</b> and <b>Email Address</b>, but you won't receive anything other than your reply.
+                     Let's embark on a data-driven journey together—I'm eager to <b>learn</b>  and <b>collaborate</b>!
                   </p>
 
                   <div class="geometric-box"></div>
@@ -373,12 +787,17 @@
                         </p>
                      </div>
 
+                    
+
                      <div class="contact__social-links">
+                        <a href="mailto:defeoedrick19@gmail.com" target="_blank" class="contact__social-link">
+                           <i class="ri-mail-add-line"></i>
+                        </a>
                         <a href="https://web.facebook.com/edricklloyd.defeo" target="_blank" class="contact__social-link">
                            <i class="ri-facebook-circle-line"></i>
                         </a>
 
-                        <a href="#" target="_blank" class="contact__social-link">
+                        <a href="https://www.instagram.com/deanr.ick/" target="_blank" class="contact__social-link">
                            <i class="ri-instagram-line"></i>
                         </a>
 
@@ -401,7 +820,10 @@
                </li>
 
                <li>
-                  <a href="#services" class="footer__link">Services</a>
+                  <a href="#certificates" class="footer__link">Certificates</a>
+               </li>
+               <li>
+                  <a href="#skills" class="footer__link">Skills</a>
                </li>
 
                <li>
